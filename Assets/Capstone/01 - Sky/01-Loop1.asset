@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a4b40c30fbcc14295fb0c01c0be817, type: 3}
+  m_Name: 01-Loop1
+  m_EditorClassIdentifier: Assembly-CSharp::MusicTrack
+  intro: {fileID: 8300000, guid: 3c94c9169a9ee764c91673fcbe5322ed, type: 3}
+  loop: {fileID: 8300000, guid: 80bf444ce4c94814881556ebe58868b8, type: 3}
+  outro: {fileID: 0}
