@@ -1299,6 +1299,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70ef33b9e238a954ba36ee3c293adc2a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1024179209}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 70ef33b9e238a954ba36ee3c293adc2a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1024179213}
   m_SourcePrefab: {fileID: 100100000, guid: 70ef33b9e238a954ba36ee3c293adc2a, type: 3}
 --- !u!1 &1024179208 stripped
 GameObject:
@@ -1317,7 +1320,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f69f0ae1f83643b45bcb6fc5256bc825, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1399,6 +1402,47 @@ AudioSource:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1024179213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024179208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da546b4b21bf68a4e9132c5786880cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioFader
+  targetVolume: 1
+  fadeInTime: 5
+  fadeOutTime: 2
+  startDelay: 1
+  fadeInOnStart: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -1560,7 +1604,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d465b3919991a4447a68bbaa118efe0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a6b153a7f5085e84b961e64693731490, type: 2}
+      objectReference: {fileID: 2100000, guid: c0f60deb2bda531458088de4d526cb1e, type: 2}
     - target: {fileID: 919132149155446097, guid: d465b3919991a4447a68bbaa118efe0a, type: 3}
       propertyPath: m_Name
       value: Monkey
@@ -1736,15 +1780,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fa762fabeae6a3419d9f54181ab0d06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fa762fabeae6a3419d9f54181ab0d06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -79.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fa762fabeae6a3419d9f54181ab0d06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fa762fabeae6a3419d9f54181ab0d06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1895,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d465b3919991a4447a68bbaa118efe0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a6b153a7f5085e84b961e64693731490, type: 2}
+      objectReference: {fileID: 2100000, guid: c0f60deb2bda531458088de4d526cb1e, type: 2}
     - target: {fileID: 919132149155446097, guid: d465b3919991a4447a68bbaa118efe0a, type: 3}
       propertyPath: m_Name
       value: Monkey (1)
@@ -1977,12 +2021,20 @@ MonoBehaviour:
     isColor: 1
     targetFloat: 0
     targetColor: {r: 0.6886792, g: 0.39556524, b: 0.18516374, a: 0}
+  - propertyName: _StarPower
+    isColor: 0
+    targetFloat: 100
+    targetColor: {r: 0, g: 0, b: 0, a: 0}
   - propertyName: _HorizonBlend
     isColor: 0
     targetFloat: 1.5
     targetColor: {r: 0, g: 0, b: 0, a: 0}
-  delay: 2
-  duration: 10
+  - propertyName: _GroundColour
+    isColor: 1
+    targetFloat: 1.5
+    targetColor: {r: 0.70980394, g: 0.08067818, b: 0.11640456, a: 0}
+  delay: 5
+  duration: 15
   curve:
     serializedVersion: 2
     m_Curve:

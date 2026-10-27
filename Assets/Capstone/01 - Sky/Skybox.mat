@@ -113,7 +113,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HorizonBlend: 3.2
+    - _HorizonBlend: 6
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -121,15 +121,15 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SkyboxBlend: 2.8
-    - _SkyboxGroundBlend: 1
+    - _SkyboxGroundBlend: 0.7
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StarHeight: 333
-    - _StarIntensity: 24.51
-    - _StarPower: 27.4
+    - _StarHeight: 225
+    - _StarIntensity: 29.83
+    - _StarPower: 52
     - _Surface: 0
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
@@ -138,9 +138,9 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColour: {r: 0.4811321, g: 0.13389997, b: 0.3473362, a: 1}
-    - _HorizonColour: {r: 0.20518868, g: 0.2372414, b: 0.2735849, a: 1}
-    - _SkyColour: {r: 0.15186243, g: 0.12941177, b: 0.22745098, a: 1}
+    - _GroundColour: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+    - _HorizonColour: {r: 0.15792987, g: 0.17578912, b: 0.1981132, a: 1}
+    - _SkyColour: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
