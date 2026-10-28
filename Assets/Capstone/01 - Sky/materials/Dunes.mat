@@ -98,9 +98,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DirtScale: 1000
-    - _DirtStep: 1.04
-    - _DirtValue: 0.6
+    - _DirtScale: 1098.5
+    - _DirtStep: 1.06
+    - _DirtValue: 0.81
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
