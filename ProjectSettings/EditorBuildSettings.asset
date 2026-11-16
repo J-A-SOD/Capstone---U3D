@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/02 - Gondola.unity
+    path: Assets/Scenes/02 - Liminal.unity
     guid: f28627cd1a3885246970b4eb8f2a5a44
   - enabled: 1
     path: Assets/Scenes/00 - Intro.unity
