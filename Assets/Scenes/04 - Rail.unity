@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 66715380}
   - component: {fileID: 66715379}
   - component: {fileID: 66715378}
+  - component: {fileID: 66715381}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -395,8 +396,8 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.37
-  m_Range: 0.92
+  m_Intensity: 0.35
+  m_Range: 0.85
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -458,12 +459,27 @@ Transform:
   m_GameObject: {fileID: 66715377}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.361, y: 2.961, z: 0.03486}
+  m_LocalPosition: {x: 2.339, y: 2.961, z: 0.018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &66715381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66715377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1001 &69946904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,6 +721,7 @@ GameObject:
   - component: {fileID: 152805955}
   - component: {fileID: 152805954}
   - component: {fileID: 152805953}
+  - component: {fileID: 152805956}
   m_Layer: 0
   m_Name: Area Light (5)
   m_TagString: Untagged
@@ -821,6 +838,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &152805956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152805952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1001 &214637396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,7 +904,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7c52fa26466a2cc4d8caa17b5de4ad65, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dc2c7df9de043ff4d9e091d0d238af16, type: 2}
+      objectReference: {fileID: 2100000, guid: 427b94e2bfe4194499a6910bab5b695e, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c52fa26466a2cc4d8caa17b5de4ad65, type: 3}
       propertyPath: m_Name
       value: Train_Arch
@@ -1166,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c69f93ba67db39940aabb07738504f0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 427b94e2bfe4194499a6910bab5b695e, type: 2}
+      objectReference: {fileID: 2100000, guid: a93f76b46e8210a4fb2fe1b6e0f87713, type: 2}
     - target: {fileID: 919132149155446097, guid: c69f93ba67db39940aabb07738504f0a, type: 3}
       propertyPath: m_Name
       value: Train_Hor_Beam
@@ -1402,7 +1434,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c69f93ba67db39940aabb07738504f0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9ba9fbb8c183e144ebff97241ea0758b, type: 2}
+      objectReference: {fileID: 2100000, guid: a93f76b46e8210a4fb2fe1b6e0f87713, type: 2}
     - target: {fileID: 919132149155446097, guid: c69f93ba67db39940aabb07738504f0a, type: 3}
       propertyPath: m_Name
       value: Train_Hor_Beam
@@ -1584,7 +1616,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 47e59904f9f873240ac39507dea95bc4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 447569776bafa474a81cf6f6211f65ad, type: 2}
+      objectReference: {fileID: 2100000, guid: ecfe3c9d0ef59ce479d68344a8572960, type: 2}
     - target: {fileID: 919132149155446097, guid: 47e59904f9f873240ac39507dea95bc4, type: 3}
       propertyPath: m_Name
       value: Train_Ver_Beam
@@ -1702,6 +1734,7 @@ GameObject:
   - component: {fileID: 383755403}
   - component: {fileID: 383755402}
   - component: {fileID: 383755401}
+  - component: {fileID: 383755404}
   m_Layer: 0
   m_Name: Area Light (4)
   m_TagString: Untagged
@@ -1818,6 +1851,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &383755404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383755400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1 &455681307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 47e59904f9f873240ac39507dea95bc4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 447569776bafa474a81cf6f6211f65ad, type: 2}
+      objectReference: {fileID: 2100000, guid: ecfe3c9d0ef59ce479d68344a8572960, type: 2}
     - target: {fileID: 919132149155446097, guid: 47e59904f9f873240ac39507dea95bc4, type: 3}
       propertyPath: m_Name
       value: Train_Ver_Beam
@@ -3334,6 +3382,7 @@ GameObject:
   - component: {fileID: 1018446071}
   - component: {fileID: 1018446070}
   - component: {fileID: 1018446069}
+  - component: {fileID: 1018446072}
   m_Layer: 0
   m_Name: Area Light (2)
   m_TagString: Untagged
@@ -3450,6 +3499,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1018446072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018446068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1001 &1042669147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3926,6 +3990,7 @@ GameObject:
   - component: {fileID: 1415096310}
   - component: {fileID: 1415096309}
   - component: {fileID: 1415096308}
+  - component: {fileID: 1415096311}
   m_Layer: 0
   m_Name: Area Light (3)
   m_TagString: Untagged
@@ -4042,6 +4107,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1415096311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415096307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1001 &1540345221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4647,7 +4727,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a608dc4645416044a9d1ff8af1d46129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4821,6 +4901,7 @@ GameObject:
   - component: {fileID: 1760164995}
   - component: {fileID: 1760164994}
   - component: {fileID: 1760164993}
+  - component: {fileID: 1760164996}
   m_Layer: 0
   m_Name: Area Light (1)
   m_TagString: Untagged
@@ -4937,6 +5018,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1760164996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760164992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8b1b8b0f40fb940b84b9d1d9abe35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightJiggle
+  range: {x: 0.1, y: 0, z: 0.1}
+  speed: 0.7
+  randomiseStart: 1
 --- !u!1001 &1760521470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5474,7 +5570,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7c52fa26466a2cc4d8caa17b5de4ad65, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dc2c7df9de043ff4d9e091d0d238af16, type: 2}
+      objectReference: {fileID: 2100000, guid: 427b94e2bfe4194499a6910bab5b695e, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c52fa26466a2cc4d8caa17b5de4ad65, type: 3}
       propertyPath: m_Name
       value: Train_Arch
