@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/06 - Rain.unity
     guid: e0ee0db98dd82e640b1910e154d6bc01
   - enabled: 1
-    path: Assets/Scenes/07 - Boat.unity
+    path: Assets/Scenes/07 - Dust.unity
     guid: cc40f7dd31c2f4a4090c0fad2dcf1f28
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
